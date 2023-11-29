@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+</head>
+<body>
+    <script>
+        const student = [{
+            id: 1,
+            name: "Taimur",
+            marks: 400
+        },
+        {
+            id: 2,
+            name: "Ashna",
+            marks: 250
+        },
+        {
+            id: 3,
+            name: "Ryan",
+            marks: 300
+        },
+        {
+            id: 4,
+            name: "Nimra",
+            marks: 350
+        },
+        {
+            id: 5,
+            name: "Sohaib",
+            marks: 100
+        }
+        ];
+
+        const pass = student.filter(filterpassstudent);
+        function filterpassstudent(student) {
+            return student.marks > 200;
+        }
+        const fail = student.filter(filterstudent);
+        function filterstudent(student) {
+            return student.marks < 200;
+        }
+        console.log("Passed:");
+        console.log(pass);
+        console.log("Failed:");
+        console.log(fail);
+    </script>
+</body>
+</html>
